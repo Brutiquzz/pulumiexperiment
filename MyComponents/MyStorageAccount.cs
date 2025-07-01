@@ -6,9 +6,6 @@ namespace MyComponents;
 
 public class MyStorageAccount : ComponentResource
 {
-    [Output("storageAccount")]
-    public StorageAccount StorageAccount { get; set; }
-
     public MyStorageAccount(string name, MyStorageAccountResourceArgs resourceArgs, ComponentResourceOptions opts)
         : base("mycomponents:index:MyStorageAccount", name, opts)
     {
@@ -25,11 +22,11 @@ public class MyStorageAccount : ComponentResource
             Location = resourceArgs.Location,
         };
 
-        StorageAccount = new StorageAccount(name, storageAccountArgs);
+        var storageAccount = new StorageAccount(name, storageAccountArgs);
 
         this.RegisterOutputs(new Dictionary<string, object?>
         {
-            ["storageAccount"] = StorageAccount.Name,
+            ["storageAccount"] = storageAccount.Name,
         });
 
     }
