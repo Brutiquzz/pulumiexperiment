@@ -1,10 +1,8 @@
-﻿namespace MyComponents
+﻿using System.Threading.Tasks;
+
+class Program
 {
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            Pulumi.Experimental.Provider.ComponentProviderHost.Serve(args);
-        }
-    }
+    public static Task Main(string[] args) =>
+        Pulumi.Experimental.Provider.ComponentProviderHost.Serve(args);
 }
+
