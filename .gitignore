@@ -5,3 +5,5 @@
 /.vs
 /MyPulumiComponents/bin/Debug/net9.0
 /MyPulumiComponents/obj
+/MyComponents/bin
+/MyComponents/obj
