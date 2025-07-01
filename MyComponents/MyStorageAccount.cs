@@ -2,9 +2,9 @@
 using Pulumi.AzureNative.Storage;
 using AzureNative = Pulumi.AzureNative;
 
-namespace MyPulumiComponents;
+namespace MyComponents;
 
-public class MyStorageAccount : Pulumi.ComponentResource
+public class MyStorageAccount : ComponentResource
 {
     public StorageAccount StorageAccount { get; set; }
     public MyStorageAccount(string name, ComponentResourceOptions opts, CustomResourceOptions? customResourceOptions = null)
@@ -17,13 +17,13 @@ public class MyStorageAccount : Pulumi.ComponentResource
             ResourceGroupName = "SomeResourceGroupp",
             Sku = new AzureNative.Storage.Inputs.SkuArgs
             {
-                Name = AzureNative.Storage.SkuName.Standard_LRS,
+                Name = SkuName.Standard_LRS,
             },
-            Kind = AzureNative.Storage.Kind.StorageV2,
+            Kind = Kind.StorageV2,
             Location = "West Europe",
         };
 
-        this.StorageAccount = new StorageAccount(name, storageAccountArgs, customResourceOptions);
+        StorageAccount = new StorageAccount(name, storageAccountArgs, customResourceOptions);
 
     }
 }
