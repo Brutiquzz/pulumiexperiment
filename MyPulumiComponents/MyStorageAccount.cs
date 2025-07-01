@@ -14,7 +14,7 @@ public class MyStorageAccount : Pulumi.ComponentResource
         {
             AccountName = name.ToLower(),
             EnableHttpsTrafficOnly = true,
-            ResourceGroupName = "SomeResourceGroup",
+            ResourceGroupName = "SomeResourceGroupp",
             Sku = new AzureNative.Storage.Inputs.SkuArgs
             {
                 Name = AzureNative.Storage.SkuName.Standard_LRS,
