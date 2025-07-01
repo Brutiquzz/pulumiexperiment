@@ -7,7 +7,7 @@ namespace MyComponents;
 public class MyStorageAccount : ComponentResource
 {
     public StorageAccount StorageAccount { get; set; }
-    public MyStorageAccount(string name, ComponentResourceOptions opts, CustomResourceOptions? customResourceOptions = null)
+    public MyStorageAccount(string name, MyStorageAccountResourceArgs resourceArgs, ComponentResourceOptions opts)
         : base("mycomponents:index:MyStorageAccount", name, opts)
     {
         var storageAccountArgs = new StorageAccountArgs 
@@ -20,10 +20,10 @@ public class MyStorageAccount : ComponentResource
                 Name = SkuName.Standard_LRS,
             },
             Kind = Kind.StorageV2,
-            Location = "West Europe",
+            Location = resourceArgs.Location,
         };
 
-        StorageAccount = new StorageAccount(name, storageAccountArgs, customResourceOptions);
+        StorageAccount = new StorageAccount(name, storageAccountArgs);
 
     }
 }
