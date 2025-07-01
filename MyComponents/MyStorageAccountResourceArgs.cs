@@ -1,11 +1,10 @@
 ﻿using Pulumi;
 using Pulumi.AzureNative.Storage;
 
-namespace MyComponents
+namespace MyComponents;
+
+public class MyStorageAccountResourceArgs : Pulumi.ResourceArgs
 {
-    public sealed class MyStorageAccountResourceArgs : Pulumi.ResourceArgs
-    {
-        [Input("location", required: true)]
-        public Input<string> Location { get; set; } 
-    }
+    [Input("location", required: true)]
+    public Input<string> Location { get; set; } 
 }
