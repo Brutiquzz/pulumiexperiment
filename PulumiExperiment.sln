@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyComponents", "MyComponents\MyComponents.csproj", "{552E243C-7AE1-4150-895F-3EEB58EBD893}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPulumiStack", "MyPulumiStack\MyPulumiStack.csproj", "{8D8D508D-B2F8-4709-A8D7-BB9DB1BF73DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPulumiTemplate", "MyPulumiTemplate\MyPulumiTemplate.csproj", "{FCA184EA-E692-7F3E-B55E-9C8A1A2DC5D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{552E243C-7AE1-4150-895F-3EEB58EBD893}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{552E243C-7AE1-4150-895F-3EEB58EBD893}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{552E243C-7AE1-4150-895F-3EEB58EBD893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D8D508D-B2F8-4709-A8D7-BB9DB1BF73DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8D508D-B2F8-4709-A8D7-BB9DB1BF73DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8D508D-B2F8-4709-A8D7-BB9DB1BF73DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8D508D-B2F8-4709-A8D7-BB9DB1BF73DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCA184EA-E692-7F3E-B55E-9C8A1A2DC5D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA184EA-E692-7F3E-B55E-9C8A1A2DC5D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA184EA-E692-7F3E-B55E-9C8A1A2DC5D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA184EA-E692-7F3E-B55E-9C8A1A2DC5D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
