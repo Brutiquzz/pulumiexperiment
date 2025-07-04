@@ -1,5 +1,4 @@
 ﻿using Pulumi;
-using Pulumi.AzureNative.Storage;
 
 namespace MyComponents;
 
