@@ -1,9 +1,11 @@
 name: MyPulumiTemplate
 description: the template
 runtime: dotnet
-config:
-  pulumi:tags:
-    value:
-      pulumi:template: azure-csharp
+template:
+  description: My pulumi template test
+  config:
+    region:
+      description: The Azure region to deploy to
+      default: west europe
 packages:
   my-components: git://github.com/Brutiquzz/pulumiexperiment/MyComponents@2.0.2

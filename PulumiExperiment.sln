@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPulumiStack", "MyPulumiSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPulumiTemplate", "MyPulumiTemplate\MyPulumiTemplate.csproj", "{FCA184EA-E692-7F3E-B55E-9C8A1A2DC5D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dummy", "dummy\dummy.csproj", "{FDB3AF13-153E-E6D3-5C37-927BCF678CEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FCA184EA-E692-7F3E-B55E-9C8A1A2DC5D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCA184EA-E692-7F3E-B55E-9C8A1A2DC5D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCA184EA-E692-7F3E-B55E-9C8A1A2DC5D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB3AF13-153E-E6D3-5C37-927BCF678CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB3AF13-153E-E6D3-5C37-927BCF678CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB3AF13-153E-E6D3-5C37-927BCF678CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB3AF13-153E-E6D3-5C37-927BCF678CEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -32,6 +32,5 @@ public class MyStorageAccount : ComponentResource
         {
             ["storageAccount"] = storageAccount.Name,
         });
-
     }
 }
