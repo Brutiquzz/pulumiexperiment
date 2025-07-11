@@ -8,7 +8,7 @@ public class MyStorageAccount : ComponentResource
 {
     [Output("storageAccountId")]
     public Output<string> StorageAccountId { get; set; }
-    public MyStorageAccount(string name, MyStorageAccountResourceArgs resourceArgs, ComponentResourceOptions opts)
+    public MyStorageAccount(string name, MyStorageAccountResourceArgs args, ComponentResourceOptions opts)
         : base("mycomponents:index:MyStorageAccount", name, opts)
     {
         var storageAccountArgs = new StorageAccountArgs 
@@ -21,7 +21,7 @@ public class MyStorageAccount : ComponentResource
                 Name = SkuName.Standard_LRS,
             },
             Kind = Kind.StorageV2,
-            Location = resourceArgs.Location,
+            Location = args.Location,
         };
 
         var storageAccount = new StorageAccount(name, storageAccountArgs);
