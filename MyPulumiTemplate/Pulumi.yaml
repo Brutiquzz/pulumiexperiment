@@ -8,4 +8,4 @@ template:
       description: The Azure region to deploy to
       default: west europe
 packages:
-  my-components: git://github.com/Brutiquzz/pulumiexperiment/MyComponents@2.0.7
+  my-components: git://github.com/Brutiquzz/pulumiexperiment/MyComponents@2.0.9
