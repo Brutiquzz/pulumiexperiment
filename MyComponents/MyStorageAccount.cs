@@ -6,6 +6,7 @@ namespace MyComponents;
 
 public class MyStorageAccount : ComponentResource
 {
+    [Output("storageAccountId")]
     public Output<string> StorageAccountId { get; private set; }
 
     public MyStorageAccount(string name, MyStorageAccountResourceArgs args, ComponentResourceOptions? opts = null)
