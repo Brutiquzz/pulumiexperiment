@@ -1,5 +1,5 @@
 ﻿using Brutiquzz.MyComponents;
-using Pulumi;
+using System;
 using System.Collections.Generic;
 
 return await Pulumi.Deployment.RunAsync(() =>
@@ -12,7 +12,7 @@ return await Pulumi.Deployment.RunAsync(() =>
         Location = region,
     };
 
-    var storageAccount = new MyStorageAccount("somename", args, null);
+    var storageAccount = new MyStorageAccount($"{Guid.NewGuid()}", args, null);
 
     // Export the primary key of the Storage Account
     return new Dictionary<string, object?>
