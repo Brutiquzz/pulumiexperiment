@@ -15,7 +15,7 @@ public class MyStorageAccount : ComponentResource
         {
             AccountName = name.ToLower(),
             EnableHttpsTrafficOnly = true,
-            ResourceGroupName = "SomeResourceGroupp",
+            ResourceGroupName = "SomeResourceGroup",
             Sku = new AzureNative.Storage.Inputs.SkuArgs
             {
                 Name = SkuName.Standard_LRS,
