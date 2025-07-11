@@ -12,7 +12,7 @@ return await Pulumi.Deployment.RunAsync(() =>
         Location = region,
     };
 
-    var storageAccount = new MyStorageAccount($"{Guid.NewGuid()}", args, null);
+    var storageAccount = new MyStorageAccount($"{Guid.NewGuid()}".ToLower(), args, null);
 
     // Export the primary key of the Storage Account
     return new Dictionary<string, object?>
