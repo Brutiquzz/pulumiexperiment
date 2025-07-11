@@ -4,6 +4,6 @@ namespace MyComponents;
 
 public class MyStorageAccountResourceArgs : Pulumi.ResourceArgs
 {
-    [Input("location", required: true)]
-    public Input<string> Location { get; set; } = string.Empty;
+    public Input<string> Location { get; set; } = null!;
+    public Input<string> ResourceGroupName { get; set; } = null!;
 }

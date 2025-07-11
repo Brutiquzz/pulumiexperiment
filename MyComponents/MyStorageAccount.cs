@@ -6,16 +6,16 @@ namespace MyComponents;
 
 public class MyStorageAccount : ComponentResource
 {
-    [Output("storageAccountId")]
-    public Output<string> StorageAccountId { get; set; }
-    public MyStorageAccount(string name, MyStorageAccountResourceArgs args, ComponentResourceOptions opts)
+    public Output<string> StorageAccountId { get; private set; }
+
+    public MyStorageAccount(string name, MyStorageAccountResourceArgs args, ComponentResourceOptions? opts = null)
         : base("mycomponents:index:MyStorageAccount", name, opts)
     {
-        var storageAccountArgs = new StorageAccountArgs 
+        var storageAccountArgs = new StorageAccountArgs
         {
-            AccountName = name.ToLower(),
+            AccountName = name, // Ensure 'name' is valid for Azure Storage
             EnableHttpsTrafficOnly = true,
-            ResourceGroupName = "SomeResourceGroup",
+            ResourceGroupName = args.ResourceGroupName,
             Sku = new AzureNative.Storage.Inputs.SkuArgs
             {
                 Name = SkuName.Standard_LRS,
@@ -28,9 +28,9 @@ public class MyStorageAccount : ComponentResource
 
         StorageAccountId = storageAccount.Id;
 
-        this.RegisterOutputs(new Dictionary<string, object?>
-        {
-            ["storageAccount"] = storageAccount.Name,
-        });
+        //this.RegisterOutputs(new Dictionary<string, object?>
+        //{
+        //    ["storageAccountId"] = StorageAccountId,
+        //});
     }
 }
