@@ -34,7 +34,7 @@ namespace Brutiquzz.MyComponents
             var defaultOptions = new ComponentResourceOptions
             {
                 Version = Utilities.Version,
-                PluginDownloadURL = "git://github.com/Brutiquzz/pulumiexperiment/tree/main/MyComponents",
+                PluginDownloadURL = "https://github.com/Brutiquzz/pulumiexperiment/tree/main/MyComponents",
             };
             var merged = ComponentResourceOptions.Merge(defaultOptions, options);
             // Override the ID if one was specified for consistency with other language SDKs.
