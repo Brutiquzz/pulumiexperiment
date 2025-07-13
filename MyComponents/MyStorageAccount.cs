@@ -14,7 +14,7 @@ public class MyStorageAccount : ComponentResource
     {
         var storageAccountArgs = new StorageAccountArgs
         {
-            AccountName = name, // Ensure 'name' is valid for Azure Storage
+            AccountName = name, // Ensure 'name' is valid for Azure Storagesss
             EnableHttpsTrafficOnly = true,
             ResourceGroupName = args.ResourceGroupName,
             Sku = new AzureNative.Storage.Inputs.SkuArgs
