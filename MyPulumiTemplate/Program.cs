@@ -1,23 +1,14 @@
 ﻿using Brutiquzz.MyComponents;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
-return await Pulumi.Deployment.RunAsync(() =>
+public class Program
 {
-    var config = new Pulumi.Config();
-    var region = config.Require("region");
-
-    var args = new MyStorageAccountArgs()
+    private static async Task<int> Main(string[] args)
     {
-        Location = region,
-        ResourceGroupName = "brutiquzz123",
-    };
 
-    var storageAccount = new MyStorageAccount("brutiquzz123", args, null);
+        return await Pulumi.Deployment.RunAsync<MyStack>();
 
-    // Export the primary key of the Storage Account
-    return new Dictionary<string, object?>
-    {
-        ["storageAccountId"] = storageAccount.StorageAccountId,
-    };
-});
+    }
+}
