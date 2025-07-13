@@ -29,9 +29,9 @@ public class MyStorageAccount : ComponentResource
 
         StorageAccountId = storageAccount.Id;
 
-        //this.RegisterOutputs(new Dictionary<string, object?>
-        //{
-        //    ["storageAccountId"] = StorageAccountId,
-        //});
+        this.RegisterOutputs(new Dictionary<string, object?>
+        {
+            ["storageAccountId"] = storageAccount.Id,
+        });
     }
 }
