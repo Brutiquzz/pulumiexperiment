@@ -10,9 +10,10 @@ return await Pulumi.Deployment.RunAsync(() =>
     var args = new MyStorageAccountArgs()
     {
         Location = region,
+        ResourceGroupName = "brutiquzz123",
     };
 
-    var storageAccount = new MyStorageAccount($"{Guid.NewGuid()}".ToLower(), args, null);
+    var storageAccount = new MyStorageAccount("brutiquzz123", args, null);
 
     // Export the primary key of the Storage Account
     return new Dictionary<string, object?>
