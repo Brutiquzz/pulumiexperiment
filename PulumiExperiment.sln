@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dummy", "dummy\dummy.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brutiquzz.MyComponents", "MyPulumiTemplate\sdks\brutiquzz-my-components\Brutiquzz.MyComponents.csproj", "{FAE6B3B3-7361-C0A5-77F0-F89554B72B06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPulumiCLI", "MyPulumiCLI\MyPulumiCLI.csproj", "{24B4AAF9-00CC-454E-88FE-DA94D8F6A49A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brutiquzz.Pulumicomponents", "MyPulumiTemplate\sdks\brutiquzz-pulumicomponents\Brutiquzz.Pulumicomponents.csproj", "{369FFD70-31EC-79EB-1FFA-D6779522D8D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{FAE6B3B3-7361-C0A5-77F0-F89554B72B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAE6B3B3-7361-C0A5-77F0-F89554B72B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAE6B3B3-7361-C0A5-77F0-F89554B72B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B4AAF9-00CC-454E-88FE-DA94D8F6A49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B4AAF9-00CC-454E-88FE-DA94D8F6A49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B4AAF9-00CC-454E-88FE-DA94D8F6A49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B4AAF9-00CC-454E-88FE-DA94D8F6A49A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{369FFD70-31EC-79EB-1FFA-D6779522D8D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{369FFD70-31EC-79EB-1FFA-D6779522D8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{369FFD70-31EC-79EB-1FFA-D6779522D8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{369FFD70-31EC-79EB-1FFA-D6779522D8D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

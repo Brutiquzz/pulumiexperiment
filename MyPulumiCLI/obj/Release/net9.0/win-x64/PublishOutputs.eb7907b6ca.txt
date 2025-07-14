@@ -1,0 +1,2 @@
+C:\Users\polle\Source\Repos\pulumiexperiment\MyPulumiCLI\bin\Release\net9.0\win-x64\publish\pulumictl.pdb
+C:\Users\polle\Source\Repos\pulumiexperiment\MyPulumiCLI\bin\Release\net9.0\win-x64\publish\pulumictl.exe

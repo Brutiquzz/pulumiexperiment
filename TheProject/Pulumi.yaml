@@ -1,0 +1,9 @@
+name: TheProject
+description: My pulumi template test
+runtime: dotnet
+packages:
+  pulumicomponents: git://github.com/Brutiquzz/pulumicomponents@0.0.5
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: https://github.com/Brutiquzz/pulumiexperiment/MyPulumiTemplate
