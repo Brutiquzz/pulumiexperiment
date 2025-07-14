@@ -10,7 +10,7 @@ public class MyStorageAccount : ComponentResource
     public Output<string> StorageAccountId { get; private set; }
 
     public MyStorageAccount(string name, MyStorageAccountResourceArgs args, ComponentResourceOptions? opts = null)
-        : base("mycomponents:index:MyStorageAccount", name, opts)
+        : base("pkg:index:MyStorageAccount", name, opts)
     {
         var storageAccountArgs = new StorageAccountArgs
         {
