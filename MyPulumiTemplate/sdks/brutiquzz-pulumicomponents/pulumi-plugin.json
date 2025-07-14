@@ -1,6 +1,6 @@
 {
   "resource": true,
   "name": "pulumicomponents",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "server": "git://github.com/Brutiquzz/pulumicomponents"
 }
