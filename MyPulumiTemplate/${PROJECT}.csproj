@@ -4,9 +4,10 @@
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net9.0</TargetFramework>
 		<Nullable>enable</Nullable>
-		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<!--<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
-	    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+	    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>-->
+		<AssemblyName>${PROJECT}</AssemblyName>
 		<DefaultItemExcludes>$(DefaultItemExcludes);sdks/**/*.cs</DefaultItemExcludes>
 	</PropertyGroup>
 
@@ -21,6 +22,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="sdks\brutiquzz-my-components\Brutiquzz.MyComponents.csproj" />
+	  <ProjectReference Include="sdks\brutiquzz-pulumicomponents\Brutiquzz.Pulumicomponents.csproj" />
 	</ItemGroup>
 
 	<!--<ItemGroup>

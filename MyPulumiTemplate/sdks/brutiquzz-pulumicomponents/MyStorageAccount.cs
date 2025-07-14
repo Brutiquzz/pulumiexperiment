@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 using Pulumi.Serialization;
 using Pulumi;
 
-namespace Brutiquzz.MyComponents
+namespace Brutiquzz.Pulumicomponents
 {
-    [MyComponentsResourceType("my-components:index:MyStorageAccount")]
+    [PulumicomponentsResourceType("pulumicomponents:index:MyStorageAccount")]
     public partial class MyStorageAccount : global::Pulumi.ComponentResource
     {
         [Output("storageAccountId")]
@@ -25,7 +25,7 @@ namespace Brutiquzz.MyComponents
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public MyStorageAccount(string name, MyStorageAccountArgs args, ComponentResourceOptions? options = null)
-            : base("my-components:index:MyStorageAccount", name, args ?? new MyStorageAccountArgs(), MakeResourceOptions(options, ""), remote: true)
+            : base("pulumicomponents:index:MyStorageAccount", name, args ?? new MyStorageAccountArgs(), MakeResourceOptions(options, ""), remote: true)
         {
         }
 
@@ -34,7 +34,7 @@ namespace Brutiquzz.MyComponents
             var defaultOptions = new ComponentResourceOptions
             {
                 Version = Utilities.Version,
-                PluginDownloadURL = "https://github.com/Brutiquzz/pulumiexperiment/tree/main/MyComponents",
+                PluginDownloadURL = "git://github.com/Brutiquzz/pulumicomponents",
             };
             var merged = ComponentResourceOptions.Merge(defaultOptions, options);
             // Override the ID if one was specified for consistency with other language SDKs.

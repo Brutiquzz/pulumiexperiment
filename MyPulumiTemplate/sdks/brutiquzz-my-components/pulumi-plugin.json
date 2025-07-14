@@ -1,6 +1,0 @@
-{
-  "resource": true,
-  "name": "my-components",
-  "version": "2.0.13",
-  "server": "git://github.com/Brutiquzz/pulumiexperiment/MyComponents"
-}

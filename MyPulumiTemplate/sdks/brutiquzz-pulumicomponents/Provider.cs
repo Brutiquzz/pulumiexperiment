@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 using Pulumi.Serialization;
 using Pulumi;
 
-namespace Brutiquzz.MyComponents
+namespace Brutiquzz.Pulumicomponents
 {
-    [MyComponentsResourceType("pulumi:providers:my-components")]
+    [PulumicomponentsResourceType("pulumi:providers:pulumicomponents")]
     public partial class Provider : global::Pulumi.ProviderResource
     {
         /// <summary>
@@ -21,7 +21,7 @@ namespace Brutiquzz.MyComponents
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Provider(string name, ProviderArgs? args = null, CustomResourceOptions? options = null)
-            : base("my-components", name, args ?? new ProviderArgs(), MakeResourceOptions(options, ""))
+            : base("pulumicomponents", name, args ?? new ProviderArgs(), MakeResourceOptions(options, ""))
         {
         }
 
@@ -30,7 +30,7 @@ namespace Brutiquzz.MyComponents
             var defaultOptions = new CustomResourceOptions
             {
                 Version = Utilities.Version,
-                PluginDownloadURL = "git://github.com/Brutiquzz/pulumiexperiment/MyComponents",
+                PluginDownloadURL = "git://github.com/Brutiquzz/pulumicomponents",
             };
             var merged = CustomResourceOptions.Merge(defaultOptions, options);
             // Override the ID if one was specified for consistency with other language SDKs.
