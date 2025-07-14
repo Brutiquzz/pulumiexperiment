@@ -21,12 +21,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="sdks\brutiquzz-my-components\Brutiquzz.MyComponents.csproj" />
 	  <ProjectReference Include="sdks\brutiquzz-pulumicomponents\Brutiquzz.Pulumicomponents.csproj" />
 	</ItemGroup>
-
-	<!--<ItemGroup>
-	  <ProjectReference Include="sdks\brutiquzz-my-components\Brutiquzz.MyComponents.csproj" />
-	</ItemGroup>-->
-
 </Project>
