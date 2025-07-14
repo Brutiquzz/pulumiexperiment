@@ -1,4 +1,4 @@
-﻿using Brutiquzz.MyComponents;
+﻿using Brutiquzz.Pulumicomponents;
 using Pulumi;
 
 public class MyStack : Pulumi.Stack
